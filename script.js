@@ -15,6 +15,7 @@ addButton.addEventListener("click", (e) => {
     id: Date.now(),
     status: "unchecked",
   };
+  writeTask.value = "";
   console.log(todo);
   todos.push(todo);
 
@@ -99,10 +100,9 @@ addButton.addEventListener("click", (e) => {
   taskDiv.appendChild(taskLeftDiv);
   taskDiv.appendChild(taskRightDiv);
   console.log(taskDiv);
-  if (task) {
-    taskContainer.appendChild(taskDiv);
-    taskCount++;
-    complete.innerText = `0/${taskCount}`;
-    completedNumbers.classList.remove("hide");
-  }
+
+  taskContainer.appendChild(taskDiv);
+  taskCount++;
+  complete.innerText = `0/${taskCount}`;
+  completedNumbers.classList.remove("hide");
 });

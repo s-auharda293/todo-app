@@ -14,7 +14,7 @@
   box-sizing: border-box;
 }
 head {
-  font-size: 62.5%;
+  font-size: 62.5% !important;
 }
 body {
   background-color: #272727;
@@ -22,7 +22,7 @@ body {
 }
 nav {
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
+  font-size: 1rem !important;
   display: flex;
   align-items: center;
   gap: 0.4rem;
@@ -154,7 +154,11 @@ form input:focus {
 .task-container .name {
   display: flex;
   gap: 3px;
-  align-items: center;
+  align-items: center !important;
+}
+.name p {
+  display: block;
+  margin-top: 1rem;
 }
 .task-icon {
   color: #eee;
