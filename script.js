@@ -55,8 +55,12 @@ addButton.addEventListener("click", (e) => {
 
   inputDiv.addEventListener("click", (e) => {
     e.preventDefault();
+    console.log("clicked");
+    console.log(inputDiv.checked);
     if (inputDiv.checked) {
       inputDivPara.classList.add("strike-task");
+    } else {
+      inputDivPara.classList.remove("strike-task");
     }
   });
   const taskRightDiv = document.createElement("div");
